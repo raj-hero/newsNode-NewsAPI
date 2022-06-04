@@ -4,7 +4,7 @@ const axios = require('axios')
 
 newsRouter.get('', async(req, res) => {
     try {
-        const newsAPI = await axios.get(`https://newsapi.org/v2/everything?q=bitcoin&apiKey=a0b35f7033b74a18acd5b933b23dbc93`)
+        const newsAPI = await axios.get(`https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey=a0b35f7033b74a18acd5b933b23dbc93`)
         res.render('news', { articles : newsAPI.data.articles })
     } catch (err) {
         if(err.response) {
@@ -26,7 +26,7 @@ newsRouter.get('/:id', async(req, res) => {
     let articleID = req.params.id
 
     try {
-        const newsAPI = await axios.get(`https://newsapi.org/v2/everything?q=bitcoin&apiKey=a0b35f7033b74a18acd5b933b23dbc93/${articleID}`)
+        const newsAPI = await axios.get(`https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&apiKey=a0b35f7033b74a18acd5b933b23dbc93/${articleID}`)
         res.render('newsSingle', { article : newsAPI.data })
     } catch (err) {
         if(err.response) {

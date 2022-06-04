@@ -23,14 +23,15 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
-  color: #fff;
-  background-color: #10555A;
+  color: pink;
+  background-color: #ec0e33;
   margin-bottom: 10px;
 }
 
 .header__search input[type=text] {
   padding: 6px;
   border: none;
+  background-color: pink;
 }
 
 .header__search input[type=submit] {
@@ -38,6 +39,7 @@ h2 {
   padding: 6px 10px;
   border: none;
   cursor: pointer;
+  color: #ec0e33;
 }
 
 .wrapper {
@@ -70,4 +72,3 @@ h2 {
   margin: 0 auto;
   padding: 2rem;
 }
-/*# sourceMappingURL=styles.css.map */
