@@ -44,7 +44,8 @@ newsRouter.get('/:id', async(req, res) => {
     } 
 })
 
-
+// DISPLAYED AFTER WE SEARCH IN BOX
+// THE GET IS FOR INITIAL
 newsRouter.post('', async(req, res) => {
     let search = req.body.search
     try {

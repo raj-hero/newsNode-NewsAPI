@@ -18,7 +18,9 @@
             <% if(articles != null) { %>
             <% articles.forEach(function(article, index) { %>
                 <a href="<%- article.url %>" class="news__card">
-                    <img src="<%- article.urlToImage %>" alt="<%- article.title %>">
+                    <span class="imag">
+                        <img src="<%- article.urlToImage %>" alt="<%- article.title %>">
+                    </span>
                     <h2><%- article.title %></h2>
                     <p><%- article.description %></p>
                 </a>
